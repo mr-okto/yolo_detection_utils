@@ -97,9 +97,6 @@ if __name__ == '__main__':
     ap.add_argument("-p", "--image_path", required=False,
                     default="dataset/",
                     help="Path to save scraped images")
-    ap.add_argument("-o", "--out_path", required=False,
-        default="./result",
-        help="Path to output txt files")
 
     args = vars(ap.parse_args())
 
