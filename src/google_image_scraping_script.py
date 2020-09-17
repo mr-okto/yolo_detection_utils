@@ -109,7 +109,7 @@ if __name__ == '__main__':
         wd.get('https://google.com')
         search_box = wd.find_element_by_css_selector('input.gLFyf')
         search_box.send_keys(query)
-        max_samples = args['max_samples']
+        max_samples = int(args['max_samples'])
         links = fetch_image_urls(query, max_samples, wd)
         images_path = args['image_path']
         count = 0
